@@ -10,24 +10,6 @@ describe("Manager class", () => {
     expect(manager.officeNumber).toEqual(101);
   });
 
-  it("has a method called getName", () => {
-    let manager = new Manager("Jacob", "1", "jacob@fakeemail.com", 101);
-
-    expect(manager.getName()).toBe("Jacob");
-  });
-
-  it("has a method called getID", () => {
-    let manager = new Manager("Jacob", "1", "jacob@fakeemail.com", 101);
-
-    expect(manager.getId()).toBe("1");
-  });
-
-  it("has a method called getEmail", () => {
-    let manager = new Manager("Jacob", "1", "jacob@fakeemail.com", 101);
-
-    expect(manager.getEmail()).toBe("jacob@fakeemail.com");
-  });
-
   it("has a method called getOfficeNumber()", () => {
     let manager = new Manager("Jacob", "1", "jacob@fakeemail.com", 101);
 

@@ -15,39 +15,6 @@ describe("Engineer class", () => {
     expect(engineer.github).toEqual("jacob-af");
   });
 
-  it("has a method called getName", () => {
-    let engineer = new Engineer(
-      "Jacob",
-      "1",
-      "jacob@fakeemail.com",
-      "jacob-af"
-    );
-
-    expect(engineer.getName()).toBe("Jacob");
-  });
-
-  it("has a method called getID", () => {
-    let engineer = new Engineer(
-      "Jacob",
-      "1",
-      "jacob@fakeemail.com",
-      "jacob-af"
-    );
-
-    expect(engineer.getId()).toBe("1");
-  });
-
-  it("has a method called getEmail", () => {
-    let engineer = new Engineer(
-      "Jacob",
-      "1",
-      "jacob@fakeemail.com",
-      "jacob-af"
-    );
-
-    expect(engineer.getEmail()).toBe("jacob@fakeemail.com");
-  });
-
   it("has a method called getGithub()", () => {
     let engineer = new Engineer(
       "Jacob",

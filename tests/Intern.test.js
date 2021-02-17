@@ -15,39 +15,6 @@ describe("Intern class", () => {
     expect(intern.school).toEqual("of Hard Knocks");
   });
 
-  it("has a method called getName", () => {
-    let intern = new Intern(
-      "Jacob",
-      "1",
-      "jacob@fakeemail.com",
-      "of Hard Knocks"
-    );
-
-    expect(intern.getName()).toBe("Jacob");
-  });
-
-  it("has a method called getID", () => {
-    let intern = new Intern(
-      "Jacob",
-      "1",
-      "jacob@fakeemail.com",
-      "of Hard Knocks"
-    );
-
-    expect(intern.getId()).toBe("1");
-  });
-
-  it("has a method called getEmail", () => {
-    let intern = new Intern(
-      "Jacob",
-      "1",
-      "jacob@fakeemail.com",
-      "of Hard Knocks"
-    );
-
-    expect(intern.getEmail()).toBe("jacob@fakeemail.com");
-  });
-
   it("has a method called getSchool()", () => {
     let intern = new Intern(
       "Jacob",

@@ -94,6 +94,17 @@ const inquiry = async (baseQuestions, additionalQuestion) => {
   }
 };
 
+const addManager = async () => {
+  let managerResponse = await inquiry(baseQuestions, managerQuestion);
+  let manager = new Manager(
+    managerResponse.name,
+    managerResponse.id,
+    managerResponse.email,
+    managerResponse.officeNumber
+  );
+  employees.manager.push(manager);
+};
+
 const addEmployee = async () => {
   console.clear();
   let response = await inquirer.prompt(employeeQuestion);
@@ -138,18 +149,12 @@ const generateEmployeeList = async () => {
     "Welcome to Command-Manager, a command line program to easily build an html page with your team's info"
   );
   console.log("Let's start by entering our Manager Information");
-  let managerResponse = await inquiry(baseQuestions, managerQuestion);
-  let manager = new Manager(
-    managerResponse.name,
-    managerResponse.id,
-    managerResponse.email,
-    managerResponse.officeNumber
-  );
-  employees.manager.push(manager);
-
+  await addManager();
   await addEmployee();
 
-  template(employees);
+  fs.writeFile("./dist/index.html", template(employees), (err) =>
+    err ? console.log(err) : console.log("success")
+  );
 };
 
 generateEmployeeList();

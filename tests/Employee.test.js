@@ -12,13 +12,13 @@ describe("Employee class", () => {
   it("has a method called getName", () => {
     let employee = new Employee("Jacob", "1", "jacob@fakeemail.com");
 
-    expect(employee.getName()).toBe("<h2>Jacob</h2>");
+    expect(employee.getName()).toBe(`<h2 class="card-title">Jacob</h2>`);
   });
 
   it("has a method called getID", () => {
     let employee = new Employee("Jacob", "1", "jacob@fakeemail.com");
 
-    expect(employee.getId()).toBe("<div>ID: 1</div>");
+    expect(employee.getId()).toBe(`<div>ID: 1</div>`);
   });
 
   it("has a method called getEmail", () => {
@@ -32,6 +32,6 @@ describe("Employee class", () => {
   it("has a method called getRole", () => {
     let employee = new Employee("Jacob", "1", "jacob@fakeemail.com");
 
-    expect(employee.getRole()).toBe("Employee");
+    expect(employee.getRole()).toBe(`<h2 class="card-title">Employee</h2>`);
   });
 });

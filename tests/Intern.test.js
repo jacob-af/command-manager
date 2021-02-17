@@ -23,7 +23,9 @@ describe("Intern class", () => {
       "of Hard Knocks"
     );
 
-    expect(intern.getSchool()).toBe("of Hard Knocks");
+    expect(intern.getSchool()).toBe(
+      `<div class="card-text">School: of Hard Knocks</div>`
+    );
   });
 
   it("has a method called getRole", () => {
@@ -34,6 +36,8 @@ describe("Intern class", () => {
       "of Hard Knocks"
     );
 
-    expect(intern.getRole()).toBe("Intern");
+    expect(intern.getRole()).toBe(
+      `<h2 class="card-title"><i class="fas fa-chess-pawn"></i>Intern</h2>`
+    );
   });
 });

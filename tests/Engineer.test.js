@@ -1,7 +1,7 @@
 const Engineer = require("../lib/Engineer");
 
 describe("Engineer class", () => {
-  it("return an object with name, id, and email", () => {
+  it("return an object with name, id, email, and github", () => {
     let engineer = new Engineer(
       "Jacob",
       "1",
@@ -23,7 +23,9 @@ describe("Engineer class", () => {
       "jacob-af"
     );
 
-    expect(engineer.getGithub()).toBe("jacob-af");
+    expect(engineer.getGithub()).toBe(
+      `<div class="card-text">Github: <a href="https://github.com/jacob-af" target="_blank">jacob-af</a></div>`
+    );
   });
 
   it("has a method called getRole", () => {
@@ -34,6 +36,8 @@ describe("Engineer class", () => {
       "jacob-af"
     );
 
-    expect(engineer.getRole()).toBe("Engineer");
+    expect(engineer.getRole()).toBe(
+      `<h2 class="card-title"><i class="fas fa-chess-knight"></i>Engineer</h2>`
+    );
   });
 });

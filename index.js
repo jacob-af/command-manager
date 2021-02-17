@@ -28,6 +28,19 @@ const baseQuestions = [
     type: "input",
     name: "email",
     message: "Enter your email Address:",
+    validate: function (email) {
+      // Regex mail check (return true if valid mail) thankyou : https://stackoverflow.com/questions/65189877/how-can-i-validate-that-a-user-input-their-email-when-using-inquirer-npm
+      if (
+        /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()\.,;\s@\"]+\.{0,1})+([^<>()\.,;:\s@\"]{2,}|[\d\.]+))$/.test(
+          email
+        )
+      ) {
+        return true;
+      } else {
+        console.log("\nYou must enter a valid mail address");
+        return false;
+      }
+    },
   },
 ];
 

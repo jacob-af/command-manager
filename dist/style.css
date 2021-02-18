@@ -1,0 +1,21 @@
+body {
+    background-color: #002;
+}
+
+header {
+    background-color: #800;
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin: 10px;
+}
+
+.engineer .card-title {
+    color: #066;
+}

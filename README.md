@@ -51,6 +51,8 @@ Enter
 `node index.js`  
 from the command line in the root directory and respond to each of the given prompts. First enter the manager's information for your team. The manager's info included their office number. Then use the arrow keys to select from the presented options. Engineers have a field for their github username, interns for their school. Add as many interns and engineers as you want until your team is complete.Your new html file will be saved in the `dist` directory as 'index.html'. Be sure to copy the included css file for a clean responsive interface. Links to email and Github in the HTML are functioning.
 
+Here is video walkthrough of functionality [here](https://drive.google.com/file/d/1_F9j7wKS2Aw-gCctFju-ylaoGNSIeQpB/view)
+
 ## Contributions
 
 Contributions can be made by forking the repository on gitHub and submitting a pull request.

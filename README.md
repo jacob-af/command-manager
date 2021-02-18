@@ -55,7 +55,7 @@ from the command line in the root directory and respond to each of the given pro
 
 Contributions can be made by forking the repository on gitHub and submitting a pull request.
 
-The repository can be found at [ez-readme](https://github.com/jacob-af/command-manager)
+The repository can be found at [command-manager](https://github.com/jacob-af/command-manager)
 
 ## Testing
 

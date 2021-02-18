@@ -166,7 +166,9 @@ const generateEmployeeList = async () => {
   await addEmployee();
 
   fs.writeFile("./dist/index.html", template(employees), (err) =>
-    err ? console.log(err) : console.log("success")
+    err
+      ? console.log(err)
+      : console.log("File successfully created!\nHave a great day!")
   );
 };
 

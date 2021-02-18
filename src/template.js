@@ -1,6 +1,4 @@
 const template = (employees) => {
-  console.log(employees);
-
   return `
   <!DOCTYPE html>
   <html lang="en">
